@@ -1,0 +1,4 @@
+---
+repository:
+  description: Uptime Kuma Docker Compose Deployment
+  topics: uptime-kuma, docker, docker-compose

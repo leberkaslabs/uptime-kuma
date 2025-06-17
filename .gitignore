@@ -1,0 +1,3 @@
+# ignore docker compose files
+docker-compose.d/data
+compose.override.yaml
