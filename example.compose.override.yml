@@ -1,12 +1,12 @@
 ---
 services:
-  jellyfin:
+  monitoring:
     labels:
       - traefik.enable=true
-      - traefik.http.routers.jellyfin.entrypoints=websecure
-      - traefik.http.routers.jellyfin.rule=Host(`monitoring.leberkaslabs.de`)
-      - traefik.http.routers.jellyfin.tls=true
-      - traefik.http.services.jellyfin.loadBalancer.server.port=3001
+      - traefik.http.routers.monitoring.entrypoints=websecure
+      - traefik.http.routers.monitoring.rule=Host(`monitoring.leberkaslabs.de`)
+      - traefik.http.routers.monitoring.tls=true
+      - traefik.http.services.monitoring.loadBalancer.server.port=3001
     networks:
       - traefik
 
